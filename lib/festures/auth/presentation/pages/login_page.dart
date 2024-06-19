@@ -5,6 +5,7 @@ import 'package:blog_app/festures/auth/presentation/bloc/auth_bloc.dart';
 import 'package:blog_app/festures/auth/presentation/pages/signup_page.dart';
 import 'package:blog_app/festures/auth/presentation/widgets/auth_field.dart';
 import 'package:blog_app/festures/auth/presentation/widgets/auth_gradient_button.dart';
+import 'package:blog_app/festures/blog/presentation/pages/blog_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -45,8 +46,6 @@ class _LoginPageState extends State<LoginPage> {
               //   BlogPage.route(),
               //   (route) => false,
               // );
-            } else {
-              return showSnackBar(context, "error form lisnner");
             }
           },
           builder: (context, state) {

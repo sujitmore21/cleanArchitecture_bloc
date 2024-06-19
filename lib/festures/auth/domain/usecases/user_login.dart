@@ -1,6 +1,6 @@
 import 'package:blog_app/core/error/failures.dart';
 import 'package:blog_app/core/usecase/usecase.dart';
-import 'package:blog_app/festures/auth/domain/entities/user.dart';
+import 'package:blog_app/core/common/entities/user.dart';
 import 'package:blog_app/festures/auth/domain/repository/auth_repository.dart';
 import 'package:fpdart/fpdart.dart';
 
@@ -10,7 +10,7 @@ class UserLogin implements UseCase<User, UserLoginParams> {
 
   @override
   Future<Either<Failure, User>> call(UserLoginParams params) async {
-    return await authRepository.logInWithEmailPassword(
+    return await authRepository.loginWithEmailPassword(
       email: params.email,
       password: params.password,
     );
