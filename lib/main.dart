@@ -1,6 +1,7 @@
 import 'package:blog_app/core/common/cubits/app_user/app_user_cubit.dart';
 import 'package:blog_app/core/theme/theme.dart';
 import 'package:blog_app/festures/auth/presentation/bloc/auth_bloc.dart';
+import 'package:blog_app/festures/auth/presentation/pages/login_page.dart';
 import 'package:blog_app/festures/blog/presentation/bloc/blog_bloc.dart';
 import 'package:blog_app/festures/blog/presentation/pages/blog_page.dart';
 import 'package:blog_app/init_dependencies.dart';
@@ -56,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           if (isLoggedIn) {
             return const BlogPage();
           }
-          return const BlogPage();
+          return const LoginPage();
         },
       ),
     );
