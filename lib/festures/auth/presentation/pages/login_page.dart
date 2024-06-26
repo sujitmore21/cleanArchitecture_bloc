@@ -52,6 +52,7 @@ class _LoginPageState extends State<LoginPage> {
             if (state is AuthLoading) {
               return const Loader();
             }
+
             return Form(
               key: formKey,
               child: Column(
